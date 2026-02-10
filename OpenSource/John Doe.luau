@@ -1129,7 +1129,7 @@ Empyrean = Start({
         -- Arms
         -- 85716494418115 / Milestone 1 Arm
  	    { Name = "Right Arm", MeshId = "137855860286839",  TextureId = "117670564210592", Offset = CFrame.new(0.25, -0.5, 0) },
- 	    -- 75437051504654 / Milestone 2 Arm
+ 	    -- 111138012932143 / Milestone 2 Arm
         { Name = "Right Arm", MeshId = "79875567101920",  TextureId = "136120210849686", Offset = CFrame.new(0.3, -0.5, 0) },
  	    -- 74890626600873 / Milestone 3 Arm
         { Name = "Right Arm", MeshId = "129215583333657",  TextureId = "128192857394964", Offset = CFrame.new(0.3, -0.5, 0) },
