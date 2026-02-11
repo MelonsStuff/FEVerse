@@ -1186,6 +1186,7 @@ DefaultFlingOptions = {
 }
 
 local AnimatorModule = {}
+local TrashBin = {}
 
 local script = game:GetObjects(getcustomasset(Directories.RBXMs.."John Doe.rbxmx"))[1]
 local KillAnimations = game:GetObjects(getcustomasset(Directories.RBXMs.."John Doe Kill Animations.rbxmx"))[1]
@@ -1516,6 +1517,7 @@ local Corrupt_Energy = function()
 				for i = 1, 27 do
 				task.wait(0.1)
 				local Spike = Objects:WaitForChild("Spike"):Clone()
+                table.insert(TrashBin, Spike)
 					Spike.Anchored = true
 			  		PlaySound(104633111379428)
 			    	local FrontOffset = RootPart.CFrame.LookVector * (i * 7)
@@ -1586,6 +1588,7 @@ local Digital_Footprint = function() -- ts was so rushed so mb if its a little u
                 local RootPartRaycast = Ray.new(RootPart.Position, (CFrame.new(RootPart.Position, RootPart.Position + Vector3.new(0, -1, 0))).LookVector)
                 local HitGround, HitPosition, HitNormal = workspace:FindPartOnRay(RootPartRaycast, Character)
                 local Puddle = Objects:WaitForChild("Puddle"):Clone()
+                table.insert(TrashBin, Puddle)
                 Puddle.Anchored = true
                 Puddle.CanTouch = true
                 Puddle.CanCollide = false
@@ -1875,6 +1878,9 @@ GUI.AbilitiesUI["Sprint"].MouseButton1Down:connect(function() Shift = not Shift 
 
 Empyrean.BindableEvent.Event:Once(function()
   print("Resetting.")
+    for i, v in TrashBin do
+        v:Destroy()
+    end
  	RunServiceEvent:Disconnect()
 	KeyDown:Disconnect()
 	KeyUp:Disconnect()
