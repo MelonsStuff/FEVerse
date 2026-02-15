@@ -1182,7 +1182,7 @@ Empyrean = Start({
         { Name = "Reanimate_Knife",  MeshId = "11524268570", TextureId = "11524268595", Offset = CFrame.new(0, -1.5, -0.5) * CFrame.Angles(Rad(-65), Rad(180), Rad(0))},
 	},
 	ApplyDescription = true,
-	BreakJointsDelay = 0.255,
+	BreakJointsDelay = 0.225,
 	ClickFling = false,
 	DefaultFlingOptions = {
 		HatFling = false,
@@ -1197,7 +1197,7 @@ Empyrean = Start({
 	HatDrop = false,
 	HideCharacter = Vector3.new(0, -30, 0),
 	ParentCharacter = true,
-	PermanentDeath = true,
+	PermanentDeath = false,
 	Refit = true,
 	RigSize = 1,
 	RigTransparency = 1,
