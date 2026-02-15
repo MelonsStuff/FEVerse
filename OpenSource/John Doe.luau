@@ -162,7 +162,6 @@ do
 	local OptionsHatDrop = nil
 	local OptionsHideCharacter = nil
 	local OptionsParentCharacter = nil
-	local OptionsRefit = nil
 	local OptionsRigTransparency = nil
 	local OptionsSetCameraSubject = nil
 	local OptionsSetCameraType = nil
@@ -177,8 +176,6 @@ do
 	local PreRenderConnection = nil
 
 	local RBXScriptConnections = {}
-
-	local Refitting = false
 
 	local replicatesignal = replicatesignal
 
@@ -903,7 +900,6 @@ do
 			OptionsHatDrop = Options.HatDrop
 			OptionsHideCharacter = Options.HideCharacter
 			OptionsParentCharacter = Options.ParentCharacter
-			OptionsRefit = Options.Refit
 			local OptionsRigSize = Options.RigSize
 			OptionsRigTransparency = Options.RigTransparency or 1
 			OptionsSetCameraSubject = Options.SetCameraSubject
@@ -1164,7 +1160,6 @@ Empyrean = Start({
 	HatDrop = false,
 	HideCharacter = Vector3.new(0, -30, 0),
 	ParentCharacter = true,
-	Refit = true,
 	RigSize = 1,
 	RigTransparency = 1,
 	R15 = false,
