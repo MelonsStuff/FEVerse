@@ -8,7 +8,7 @@
   // Xoaterz - Created the assets used to make this script.
 
   Note: if there's bugs pls let me know so i can fix them
-  the code may be unoptimized at some parts and uses a lot of if statements
+  the code may be unoptimized at some parts
 
   Free hats:
   // Voidstar: https://www.roblox.com/catalog/2309346267/Classic-PC-Hat
