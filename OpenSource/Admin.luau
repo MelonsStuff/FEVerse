@@ -33,7 +33,7 @@ local Directories = {
 
 local FEManager = loadstring(game:HttpGet("https://gist.githubusercontent.com/MelonsStuff/a003ea305dd302eab1f8d372daed38b4/raw/9db59962b28555fd699a7c29891efb85d45677ab/gistfile1.txt"))()
 for i, v in pairs(Directories) do FEManager.EnsureFolder(v) end
-pcall(function()
+task.spawn(function()
 FEManager.DownloadFile(Directories.RBXMs, "Admin.rbxmx", "https://drive.usercontent.google.com/download?id=1sYex5UmZvaFkQrc6P8AW5cWyX1a3RGoQ&export=download")
 FEManager.DownloadFile(Directories.Sounds, "Chase.mp3", "https://raw.githubusercontent.com/MelonsStuff/FEVerse/refs/heads/main/Sounds/Admin/Chase.MP3")
 FEManager.DownloadFile(Directories.Sounds, "Ambience.mp3", "https://github.com/MelonsStuff/FEVerse/raw/refs/heads/main/Sounds/Admin%20Reworked/Ambience.mp3")
