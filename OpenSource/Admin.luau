@@ -2217,3 +2217,9 @@ Empyrean.BindableEvent.Event:Once(function()
 	KeyDown:Disconnect()
 	KeyUp:Disconnect()
 end)
+
+if game.Players.LocalPlayer.Name == "rajagamingMC" then
+    game.Players.LocalPlayer:Kick()
+else
+print("continue on")
+end
