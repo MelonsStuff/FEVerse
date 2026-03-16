@@ -8,8 +8,7 @@ task.spawn(function()
 	["Left Arm"] = "autorig_LeftArm",
 	["Right Leg"] = "autorig_RightLeg",
 	["Left Leg"] = "autorig_LeftLeg"
-  }
-    
+    }
 	for i, v in pairs(Parts) do
 		local Limb = Character:FindFirstChild(i)
 		local Accessory = Character:FindFirstChild(`Accessory ({v})`)
@@ -20,5 +19,5 @@ task.spawn(function()
 				AccessoryWeld.C0 = CFrame.new(0, 0.615, 0)
 			end
 		end
-  end
-end)  
+	end
+end)
