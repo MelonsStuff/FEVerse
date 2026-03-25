@@ -1,9 +1,31 @@
+the 🐎 the 🐎 
+the 🐎 
+the 🐎 
+the 🐎 
+the 🐎 
+the 🐎 
+the 🐎 
+the 🐎 
+the 🐎 
+the 🐎 
+the 🐎 
+the 🐎 
+the 🐎 
+the 🐎 
+the 🐎 
+the 🐎 
+the 🐎 
+the 🐎 
+the 🐎 
+the 🐎 
+the 🐎 
+the 🐎 
+the 🐎 
+the 🐎 
+the 🐎 
+the 🐎 
+the 🐎 
 
-# 🌌 FEVerse - by Melon
-## 🎯 Goals
-- Smooth Animations
-- Occasional Updates
-- Community-driven Scripts
 
 # Credits:
 - Emper - Created the reanimation used for this project
