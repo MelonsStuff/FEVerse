@@ -106,7 +106,7 @@ do
 	local GetPlayers = Players.GetPlayers
 	local LocalPlayer = Players.LocalPlayer
 	local CharacterAdded = LocalPlayer.CharacterAdded
-	local ConnectDiedSignalBackend = LocalPlayer.ConnectDiedSignalBackend
+	--local ConnectDiedSignalBackend = LocalPlayer.ConnectDiedSignalBackend
 	local Mouse = LocalPlayer:GetMouse()
 	local Kill = LocalPlayer.Kill
 	local RunService = FindFirstChildOfClass(game, "RunService")
@@ -524,7 +524,7 @@ do
 				Targets[Target] = Options
 
 				if not OptionsDefaultFlingOptions.HatFling and OptionsPermanentDeath and replicatesignal then
-					replicatesignal(ConnectDiedSignalBackend)
+					--replicatesignal(ConnectDiedSignalBackend)
 				end
 			end
 		end
@@ -705,7 +705,7 @@ do
 			end
 
 			if OptionsPermanentDeath and replicatesignal then
-				replicatesignal(ConnectDiedSignalBackend)
+				--replicatesignal(ConnectDiedSignalBackend)
 				taskwait(Players.RespawnTime + 0.1)
 				Refitting = false
 				replicatesignal(Kill)
@@ -863,7 +863,7 @@ do
 
 					if Frames > 15 and OptionsPermanentDeath and OptionsRefit and replicatesignal then
 						Refitting = false
-						replicatesignal(ConnectDiedSignalBackend)
+						--replicatesignal(ConnectDiedSignalBackend)
 					end
 				end
 			end
@@ -1072,7 +1072,7 @@ do
 			Destroy(Rig)
 
 			if OptionsPermanentDeath and replicatesignal then
-				replicatesignal(ConnectDiedSignalBackend)
+				--replicatesignal(ConnectDiedSignalBackend)
 			end
 
 			if OptionsDisableHealthBar and not GetCoreGuiEnabled(StarterGui, Health) then
@@ -1198,7 +1198,7 @@ Empyrean = Start({
 	HideCharacter = Vector3.new(0, -30, 0),
 	ParentCharacter = true,
 	PermanentDeath = false,
-	Refit = true,
+	Refit = false,
 	RigSize = 1,
 	RigTransparency = 1,
 	R15 = false,
