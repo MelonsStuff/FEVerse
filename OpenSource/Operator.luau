@@ -42,7 +42,7 @@ local Directories = {
 
 local FEManager = loadstring(game:HttpGet("https://gist.githubusercontent.com/MelonsStuff/a003ea305dd302eab1f8d372daed38b4/raw/9db59962b28555fd699a7c29891efb85d45677ab/gistfile1.txt"))()
 for i, v in pairs(Directories) do FEManager.EnsureFolder(v) end
-FEManager.DownloadFile(Directories.Songs, "Operator.mp3", "https://dn720307.ca.archive.org/0/items/grand-funk-railroad-in-need-live-university-of-hawaii-1971/Call%20of%20Duty%20Black%20Ops%20-%20Soundtrack%20%282010%29/17.%20Pentagon.mp3")
+-- FEManager.DownloadFile(Directories.Songs, "Operator.mp3", "https://dn720307.ca.archive.org/0/items/grand-funk-railroad-in-need-live-university-of-hawaii-1971/Call%20of%20Duty%20Black%20Ops%20-%20Soundtrack%20%282010%29/17.%20Pentagon.mp3")
 FEManager.DownloadFile(Directories.RBXMs, "Operator.rbxmx", "https://raw.githubusercontent.com/MelonsStuff/FEVerse/refs/heads/main/RBXMs/OperatorMobileUI.rbxmx")
 
 local Settings = {
