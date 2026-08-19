@@ -43,7 +43,6 @@ local CreateHumanoidModelFromDescription = Players.CreateHumanoidModelFromDescri
 local GetPlayers = Players.GetPlayers
 local LocalPlayer = Players.LocalPlayer
 local CharacterAdded = LocalPlayer.CharacterAdded
-local ConnectDiedSignalBackend = LocalPlayer.ConnectDiedSignalBackend
 local Mouse = LocalPlayer:GetMouse()
 local Kill = LocalPlayer.Kill
 local RunService = FindFirstChildOfClass(game, "RunService")
@@ -460,9 +459,6 @@ end
 
 Targets[Target] = Options
 
-if not OptionsDefaultFlingOptions.HatFling and OptionsPermanentDeath and replicatesignal then
-replicatesignal(ConnectDiedSignalBackend)
-end
 end
 end
 end
@@ -641,17 +637,7 @@ end
 UnequipTools(Humanoid)
 end
 
-if OptionsPermanentDeath and replicatesignal then
-replicatesignal(ConnectDiedSignalBackend)
-
-taskwait(Players.RespawnTime + 0.1)
-
-Refitting = false
-replicatesignal(Kill)
-else
- 
 taskwait(OptionsBreakJointsDelay)
-end
 
 ModelBreakJoints(Character)
 
@@ -795,15 +781,6 @@ local LinearVelocity = Part1.AssemblyLinearVelocity * Axis
 Part0.AssemblyLinearVelocity = Vector3new(LinearVelocity.X, Axis, LinearVelocity.Z)
 
 Part0.CFrame = Part1.CFrame * Table.Offset + AntiSleep
-end
-else
-local Frames = Table.Frames or - 1
-Frames = Frames + 1
-Table.Frames = Frames
-
-if Frames > 15 and OptionsPermanentDeath and OptionsRefit and replicatesignal then
-Refitting = false
-replicatesignal(ConnectDiedSignalBackend)
 end
 end
 end
