@@ -1,6 +1,7 @@
 -- [[ Locust : Testing ]] --
--- THIS IS IN TESTING, NOT THE FINAL SCRIPT! --
+-- [[ Uses Clyde LuaU Obfuscator ]] -- 
 
+-- THIS IS IN TESTING, NOT THE FINAL SCRIPT! --
 --[[ 
 // Credits | <3
 Melon - created everything in the script (excluding pretty much all of the animations and reanimation changes)
