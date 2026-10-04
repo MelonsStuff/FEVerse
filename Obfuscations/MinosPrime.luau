@@ -43,8 +43,7 @@ local CreateHumanoidModelFromDescription = Players.CreateHumanoidModelFromDescri
 local GetPlayers = Players.GetPlayers
 local LocalPlayer = Players.LocalPlayer
 local CharacterAdded = LocalPlayer.CharacterAdded
-local ConnectDiedSignalBackend = LocalPlayer.ConnectDiedSignalBackend
-local Mouse = LocalPlayer:GetMouse()
+ local Mouse = LocalPlayer:GetMouse()
 local Kill = LocalPlayer.Kill
 local RunService = FindFirstChildOfClass(game, "RunService")
 local PostSimulation = RunService.PostSimulation
@@ -461,8 +460,7 @@ end
 Targets[Target] = Options
 
 if not OptionsDefaultFlingOptions.HatFling and OptionsPermanentDeath and replicatesignal then
-replicatesignal(ConnectDiedSignalBackend)
-end
+ end
 end
 end
 end
@@ -642,8 +640,7 @@ UnequipTools(Humanoid)
 end
 
 if OptionsPermanentDeath and replicatesignal then
-replicatesignal(ConnectDiedSignalBackend)
-
+ 
 taskwait(Players.RespawnTime + 0.1)
 
 Refitting = false
@@ -1098,7 +1095,7 @@ DisableRigCollisions = true,
 HatDrop = false,
 HideCharacter = Vector3.new(0, -30, 0),
 ParentCharacter = true,
-PermanentDeath = true,
+PermanentDeath = false,
 Refit = true,
 RigSize = 1,
 RigTransparency = 1,
