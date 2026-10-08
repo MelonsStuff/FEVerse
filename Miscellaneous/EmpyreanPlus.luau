@@ -1,6 +1,6 @@
 --[[
 Empyrean +
-A forked version of Empyrean 8.1 with additonal features added and bugs fixed.
+A forked / edited version of Empyrean 8.1 with additonal features added and bugs fixed.
 
 Credits:
 Emper - CREATED THE ORIGINAL "Empyrean Reanimate". THANK HIM FOR THIS!
