@@ -14,6 +14,7 @@ local EmoteAudioOverrides = {
 ["Miss Me Retake"] = "Miss Me",
 ["Release The Ghouls Retake"] = "Release The Ghouls",
 ["Circus Sigma"] = "Freddy",
+["Pump It Up"] = "Freddy",
 ["Horror Funk"] = "Six Seven",
 ["Imposter Syndrome"] = "Just Be Competent",
 ["Gangnam if it was awesome"] = "Gangnam Style",
