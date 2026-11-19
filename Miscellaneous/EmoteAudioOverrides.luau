@@ -8,7 +8,6 @@ local EmoteAudioOverrides = {
 ["Looping The Rooms2"] = "Looping The Rooms",
 ["Speed Bounce"] = "Tuff Asf",
 ["Lord Verity2"] = "Lord Verity",
-
 ["Diego Pose"] = "Polnareff Pose",
 ["Killer Queen Pose"] = "Polnareff Pose",
 ["Jonathan Pose"] = "Polnareff Pose",
@@ -23,6 +22,7 @@ local EmoteAudioOverrides = {
 ["Circus Sigma"] = "Freddy",
 ["Pump It Up"] = "Freddy",
 ["Horror Funk"] = "Six Seven",
+["Horror Funk2"] = "Six Seven",
 ["Imposter Syndrome"] = "Just Be Competent",
 ["Gangnam if it was awesome"] = "Gangnam Style",
 ["Crank That"] = "Crank Dat",
