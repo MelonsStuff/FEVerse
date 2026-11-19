@@ -7,6 +7,7 @@ local EmoteAudioOverrides = {
 ["Split Dance"] = "Splits Dance",
 ["Looping The Rooms2"] = "Looping The Rooms",
 ["Speed Bounce"] = "Tuff Asf",
+["Bang Bang Bang"] = "Bang Bang",
 ["Forget"] = "Pogo",
 ["Lord Verity2"] = "Lord Verity",
 ["Diego Pose"] = "Polnareff Pose",
