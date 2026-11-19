@@ -3,6 +3,7 @@ local EmoteAudioOverrides = {
 ["TInky Rap"] = "Nocturnal Protocol",
 ["Thriller Live"] = "Thriller",
 ["Metro Swing"] = "METROMAN",
+["MetroMan Dance"] = "METROMAN",
 ["Split Dance"] = "Splits Dance",
 ["Speed Bounce"] = "Tuff Asf",
 ["Diego Pose"] = "Polnareff Pose",
